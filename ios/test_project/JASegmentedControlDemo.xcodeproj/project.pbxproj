@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057CC4351794613E00AD6F53 /* JAFocusSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CB524C5F16B14649007E3DC0 /* JAFocusSegmentedControl.m */; };
+		057CC436179461DA00AD6F53 /* JASegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CB524C5B16B14638007E3DC0 /* JASegmentedControl.m */; };
+		057CC4371794626C00AD6F53 /* JAScrollableSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CB524C5D16B14644007E3DC0 /* JAScrollableSegmentedControl.m */; };
+		057CC43D17946A4B00AD6F53 /* JADemo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057CC43B17946A4B00AD6F53 /* JADemo3ViewController.m */; };
+		057CC441179477CE00AD6F53 /* JADemo3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057CC440179477CD00AD6F53 /* JADemo3ViewController.xib */; };
+		057CC4431794780F00AD6F53 /* JADemo2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 057CC4421794780F00AD6F53 /* JADemo2ViewController.xib */; };
+		05DB006A181A945200AC8E7E /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DB0069181A945200AC8E7E /* football.png */; };
+		05DB006E181AAC8000AC8E7E /* JASegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DB006D181AAC8000AC8E7E /* JASegmentedControlViewController.m */; };
+		CBA4BCD9166E0B5700FB1B62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA4BCD8166E0B5700FB1B62 /* UIKit.framework */; };
+		CBA4BCDB166E0B5700FB1B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA4BCDA166E0B5700FB1B62 /* Foundation.framework */; };
+		CBA4BCDD166E0B5700FB1B62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA4BCDC166E0B5700FB1B62 /* CoreGraphics.framework */; };
+		CBA4BCE3166E0B5700FB1B62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCE1166E0B5700FB1B62 /* InfoPlist.strings */; };
+		CBA4BCE5166E0B5700FB1B62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4BCE4166E0B5700FB1B62 /* main.m */; };
+		CBA4BCE9166E0B5700FB1B62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4BCE8166E0B5700FB1B62 /* AppDelegate.m */; };
+		CBA4BCEB166E0B5700FB1B62 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCEA166E0B5700FB1B62 /* Default.png */; };
+		CBA4BCED166E0B5700FB1B62 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCEC166E0B5700FB1B62 /* Default@2x.png */; };
+		CBA4BCEF166E0B5700FB1B62 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCEE166E0B5700FB1B62 /* Default-568h@2x.png */; };
+		CBA4BCF4166E0B5700FB1B62 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCF3166E0B5700FB1B62 /* first.png */; };
+		CBA4BCF6166E0B5700FB1B62 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCF5166E0B5700FB1B62 /* first@2x.png */; };
+		CBA4BCF9166E0B5700FB1B62 /* JADemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4BCF8166E0B5700FB1B62 /* JADemo2ViewController.m */; };
+		CBA4BCFB166E0B5700FB1B62 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCFA166E0B5700FB1B62 /* second.png */; };
+		CBA4BCFD166E0B5700FB1B62 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BCFC166E0B5700FB1B62 /* second@2x.png */; };
+		CBA4BD17166E0C1400FB1B62 /* JADemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4BD15166E0C1400FB1B62 /* JADemo1ViewController.m */; };
+		CBA4BD18166E0C1400FB1B62 /* JADemo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD16166E0C1400FB1B62 /* JADemo1ViewController.xib */; };
+		CBA4BD27166E0C6600FB1B62 /* 01_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1A166E0C6600FB1B62 /* 01_nb.png */; };
+		CBA4BD28166E0C6600FB1B62 /* 02_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1B166E0C6600FB1B62 /* 02_nb.png */; };
+		CBA4BD29166E0C6600FB1B62 /* 03_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1C166E0C6600FB1B62 /* 03_nb.png */; };
+		CBA4BD2A166E0C6600FB1B62 /* 04_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1D166E0C6600FB1B62 /* 04_nb.png */; };
+		CBA4BD2B166E0C6600FB1B62 /* 05_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1E166E0C6600FB1B62 /* 05_nb.png */; };
+		CBA4BD2C166E0C6600FB1B62 /* 06_nb.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD1F166E0C6600FB1B62 /* 06_nb.png */; };
+		CBA4BD2D166E0C6600FB1B62 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD20166E0C6600FB1B62 /* 04.png */; };
+		CBA4BD2E166E0C6600FB1B62 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD21166E0C6600FB1B62 /* 05.png */; };
+		CBA4BD2F166E0C6600FB1B62 /* 06.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD22166E0C6600FB1B62 /* 06.png */; };
+		CBA4BD30166E0C6600FB1B62 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD23166E0C6600FB1B62 /* 01.png */; };
+		CBA4BD31166E0C6600FB1B62 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD24166E0C6600FB1B62 /* 02.png */; };
+		CBA4BD32166E0C6600FB1B62 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = CBA4BD25166E0C6600FB1B62 /* 03.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		057CC43A17946A4B00AD6F53 /* JADemo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADemo3ViewController.h; sourceTree = "<group>"; };
+		057CC43B17946A4B00AD6F53 /* JADemo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADemo3ViewController.m; sourceTree = "<group>"; };
+		057CC440179477CD00AD6F53 /* JADemo3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JADemo3ViewController.xib; sourceTree = "<group>"; };
+		057CC4421794780F00AD6F53 /* JADemo2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JADemo2ViewController.xib; sourceTree = "<group>"; };
+		05DB0069181A945200AC8E7E /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
+		05DB006C181AAC8000AC8E7E /* JASegmentedControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASegmentedControlViewController.h; sourceTree = "<group>"; };
+		05DB006D181AAC8000AC8E7E /* JASegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASegmentedControlViewController.m; sourceTree = "<group>"; };
+		CB524C5A16B14638007E3DC0 /* JASegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JASegmentedControl.h; path = ../../trunk/src/JASegmentedControl.h; sourceTree = "<group>"; };
+		CB524C5B16B14638007E3DC0 /* JASegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JASegmentedControl.m; path = ../../trunk/src/JASegmentedControl.m; sourceTree = "<group>"; };
+		CB524C5C16B14644007E3DC0 /* JAScrollableSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAScrollableSegmentedControl.h; path = ../../trunk/src/JAScrollableSegmentedControl.h; sourceTree = "<group>"; };
+		CB524C5D16B14644007E3DC0 /* JAScrollableSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JAScrollableSegmentedControl.m; path = ../../trunk/src/JAScrollableSegmentedControl.m; sourceTree = "<group>"; };
+		CB524C5E16B14649007E3DC0 /* JAFocusSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAFocusSegmentedControl.h; path = ../../trunk/src/JAFocusSegmentedControl.h; sourceTree = "<group>"; };
+		CB524C5F16B14649007E3DC0 /* JAFocusSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JAFocusSegmentedControl.m; path = ../../trunk/src/JAFocusSegmentedControl.m; sourceTree = "<group>"; };
+		CBA4BCD4166E0B5700FB1B62 /* JASegmentedControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JASegmentedControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA4BCD8166E0B5700FB1B62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CBA4BCDA166E0B5700FB1B62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBA4BCDC166E0B5700FB1B62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CBA4BCE0166E0B5700FB1B62 /* JASegmentedControlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JASegmentedControlDemo-Info.plist"; sourceTree = "<group>"; };
+		CBA4BCE2166E0B5700FB1B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBA4BCE4166E0B5700FB1B62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBA4BCE6166E0B5700FB1B62 /* JASegmentedControlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JASegmentedControlDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CBA4BCE7166E0B5700FB1B62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBA4BCE8166E0B5700FB1B62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBA4BCEA166E0B5700FB1B62 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CBA4BCEC166E0B5700FB1B62 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CBA4BCEE166E0B5700FB1B62 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CBA4BCF3166E0B5700FB1B62 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		CBA4BCF5166E0B5700FB1B62 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		CBA4BCF7166E0B5700FB1B62 /* JADemo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JADemo2ViewController.h; sourceTree = "<group>"; };
+		CBA4BCF8166E0B5700FB1B62 /* JADemo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JADemo2ViewController.m; sourceTree = "<group>"; };
+		CBA4BCFA166E0B5700FB1B62 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		CBA4BCFC166E0B5700FB1B62 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		CBA4BD14166E0C1400FB1B62 /* JADemo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADemo1ViewController.h; sourceTree = "<group>"; };
+		CBA4BD15166E0C1400FB1B62 /* JADemo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADemo1ViewController.m; sourceTree = "<group>"; };
+		CBA4BD16166E0C1400FB1B62 /* JADemo1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JADemo1ViewController.xib; sourceTree = "<group>"; };
+		CBA4BD1A166E0C6600FB1B62 /* 01_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_nb.png; sourceTree = "<group>"; };
+		CBA4BD1B166E0C6600FB1B62 /* 02_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_nb.png; sourceTree = "<group>"; };
+		CBA4BD1C166E0C6600FB1B62 /* 03_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03_nb.png; sourceTree = "<group>"; };
+		CBA4BD1D166E0C6600FB1B62 /* 04_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04_nb.png; sourceTree = "<group>"; };
+		CBA4BD1E166E0C6600FB1B62 /* 05_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05_nb.png; sourceTree = "<group>"; };
+		CBA4BD1F166E0C6600FB1B62 /* 06_nb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_nb.png; sourceTree = "<group>"; };
+		CBA4BD20166E0C6600FB1B62 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		CBA4BD21166E0C6600FB1B62 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
+		CBA4BD22166E0C6600FB1B62 /* 06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06.png; sourceTree = "<group>"; };
+		CBA4BD23166E0C6600FB1B62 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		CBA4BD24166E0C6600FB1B62 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		CBA4BD25166E0C6600FB1B62 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBA4BCD1166E0B5700FB1B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA4BCD9166E0B5700FB1B62 /* UIKit.framework in Frameworks */,
+				CBA4BCDB166E0B5700FB1B62 /* Foundation.framework in Frameworks */,
+				CBA4BCDD166E0B5700FB1B62 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		057CC43F17946A5700AD6F53 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05DB006C181AAC8000AC8E7E /* JASegmentedControlViewController.h */,
+				05DB006D181AAC8000AC8E7E /* JASegmentedControlViewController.m */,
+				CBA4BD14166E0C1400FB1B62 /* JADemo1ViewController.h */,
+				CBA4BD15166E0C1400FB1B62 /* JADemo1ViewController.m */,
+				CBA4BD16166E0C1400FB1B62 /* JADemo1ViewController.xib */,
+				CBA4BCF7166E0B5700FB1B62 /* JADemo2ViewController.h */,
+				CBA4BCF8166E0B5700FB1B62 /* JADemo2ViewController.m */,
+				057CC4421794780F00AD6F53 /* JADemo2ViewController.xib */,
+				057CC43A17946A4B00AD6F53 /* JADemo3ViewController.h */,
+				057CC43B17946A4B00AD6F53 /* JADemo3ViewController.m */,
+				057CC440179477CD00AD6F53 /* JADemo3ViewController.xib */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		05DB006B181A945C00AC8E7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05DB0069181A945200AC8E7E /* football.png */,
+				CBA4BD1A166E0C6600FB1B62 /* 01_nb.png */,
+				CBA4BD1B166E0C6600FB1B62 /* 02_nb.png */,
+				CBA4BD1C166E0C6600FB1B62 /* 03_nb.png */,
+				CBA4BD1D166E0C6600FB1B62 /* 04_nb.png */,
+				CBA4BD1E166E0C6600FB1B62 /* 05_nb.png */,
+				CBA4BD1F166E0C6600FB1B62 /* 06_nb.png */,
+				CBA4BD20166E0C6600FB1B62 /* 04.png */,
+				CBA4BD21166E0C6600FB1B62 /* 05.png */,
+				CBA4BD22166E0C6600FB1B62 /* 06.png */,
+				CBA4BD23166E0C6600FB1B62 /* 01.png */,
+				CBA4BD24166E0C6600FB1B62 /* 02.png */,
+				CBA4BD25166E0C6600FB1B62 /* 03.png */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CBA4BCC9166E0B5700FB1B62 = {
+			isa = PBXGroup;
+			children = (
+				CBA4BCDE166E0B5700FB1B62 /* JASegmentedControlDemo */,
+				CBA4BCD7166E0B5700FB1B62 /* Frameworks */,
+				CBA4BCD5166E0B5700FB1B62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA4BCD5166E0B5700FB1B62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA4BCD4166E0B5700FB1B62 /* JASegmentedControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBA4BCD7166E0B5700FB1B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA4BCD8166E0B5700FB1B62 /* UIKit.framework */,
+				CBA4BCDA166E0B5700FB1B62 /* Foundation.framework */,
+				CBA4BCDC166E0B5700FB1B62 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBA4BCDE166E0B5700FB1B62 /* JASegmentedControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				05DB006B181A945C00AC8E7E /* Resources */,
+				057CC43F17946A5700AD6F53 /* View controllers */,
+				CBA4BD0D166E0BD800FB1B62 /* JASegmentedControl */,
+				CBA4BD38166E368B00FB1B62 /* JAFocusSegmentedControl */,
+				CBA4BD37166E364600FB1B62 /* JAScrollableSegmentedControl */,
+				CBA4BCE7166E0B5700FB1B62 /* AppDelegate.h */,
+				CBA4BCE8166E0B5700FB1B62 /* AppDelegate.m */,
+				CBA4BCF3166E0B5700FB1B62 /* first.png */,
+				CBA4BCF5166E0B5700FB1B62 /* first@2x.png */,
+				CBA4BCFA166E0B5700FB1B62 /* second.png */,
+				CBA4BCFC166E0B5700FB1B62 /* second@2x.png */,
+				CBA4BCDF166E0B5700FB1B62 /* Supporting Files */,
+			);
+			path = JASegmentedControlDemo;
+			sourceTree = "<group>";
+		};
+		CBA4BCDF166E0B5700FB1B62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA4BCE0166E0B5700FB1B62 /* JASegmentedControlDemo-Info.plist */,
+				CBA4BCE1166E0B5700FB1B62 /* InfoPlist.strings */,
+				CBA4BCE4166E0B5700FB1B62 /* main.m */,
+				CBA4BCE6166E0B5700FB1B62 /* JASegmentedControlDemo-Prefix.pch */,
+				CBA4BCEA166E0B5700FB1B62 /* Default.png */,
+				CBA4BCEC166E0B5700FB1B62 /* Default@2x.png */,
+				CBA4BCEE166E0B5700FB1B62 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBA4BD0D166E0BD800FB1B62 /* JASegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				CB524C5A16B14638007E3DC0 /* JASegmentedControl.h */,
+				CB524C5B16B14638007E3DC0 /* JASegmentedControl.m */,
+			);
+			name = JASegmentedControl;
+			sourceTree = "<group>";
+		};
+		CBA4BD37166E364600FB1B62 /* JAScrollableSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				CB524C5C16B14644007E3DC0 /* JAScrollableSegmentedControl.h */,
+				CB524C5D16B14644007E3DC0 /* JAScrollableSegmentedControl.m */,
+			);
+			name = JAScrollableSegmentedControl;
+			sourceTree = "<group>";
+		};
+		CBA4BD38166E368B00FB1B62 /* JAFocusSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				CB524C5E16B14649007E3DC0 /* JAFocusSegmentedControl.h */,
+				CB524C5F16B14649007E3DC0 /* JAFocusSegmentedControl.m */,
+			);
+			name = JAFocusSegmentedControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBA4BCD3166E0B5700FB1B62 /* JASegmentedControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA4BD06166E0B5700FB1B62 /* Build configuration list for PBXNativeTarget "JASegmentedControlDemo" */;
+			buildPhases = (
+				CBA4BCD0166E0B5700FB1B62 /* Sources */,
+				CBA4BCD1166E0B5700FB1B62 /* Frameworks */,
+				CBA4BCD2166E0B5700FB1B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JASegmentedControlDemo;
+			productName = JASegmentedControlDemo;
+			productReference = CBA4BCD4166E0B5700FB1B62 /* JASegmentedControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBA4BCCB166E0B5700FB1B62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = lotsys;
+			};
+			buildConfigurationList = CBA4BCCE166E0B5700FB1B62 /* Build configuration list for PBXProject "JASegmentedControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBA4BCC9166E0B5700FB1B62;
+			productRefGroup = CBA4BCD5166E0B5700FB1B62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBA4BCD3166E0B5700FB1B62 /* JASegmentedControlDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBA4BCD2166E0B5700FB1B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA4BCE3166E0B5700FB1B62 /* InfoPlist.strings in Resources */,
+				CBA4BCEB166E0B5700FB1B62 /* Default.png in Resources */,
+				CBA4BCED166E0B5700FB1B62 /* Default@2x.png in Resources */,
+				CBA4BCEF166E0B5700FB1B62 /* Default-568h@2x.png in Resources */,
+				CBA4BCF4166E0B5700FB1B62 /* first.png in Resources */,
+				CBA4BCF6166E0B5700FB1B62 /* first@2x.png in Resources */,
+				CBA4BCFB166E0B5700FB1B62 /* second.png in Resources */,
+				CBA4BCFD166E0B5700FB1B62 /* second@2x.png in Resources */,
+				CBA4BD18166E0C1400FB1B62 /* JADemo1ViewController.xib in Resources */,
+				CBA4BD27166E0C6600FB1B62 /* 01_nb.png in Resources */,
+				CBA4BD28166E0C6600FB1B62 /* 02_nb.png in Resources */,
+				CBA4BD29166E0C6600FB1B62 /* 03_nb.png in Resources */,
+				CBA4BD2A166E0C6600FB1B62 /* 04_nb.png in Resources */,
+				CBA4BD2B166E0C6600FB1B62 /* 05_nb.png in Resources */,
+				CBA4BD2C166E0C6600FB1B62 /* 06_nb.png in Resources */,
+				CBA4BD2D166E0C6600FB1B62 /* 04.png in Resources */,
+				CBA4BD2E166E0C6600FB1B62 /* 05.png in Resources */,
+				CBA4BD2F166E0C6600FB1B62 /* 06.png in Resources */,
+				05DB006A181A945200AC8E7E /* football.png in Resources */,
+				CBA4BD30166E0C6600FB1B62 /* 01.png in Resources */,
+				CBA4BD31166E0C6600FB1B62 /* 02.png in Resources */,
+				CBA4BD32166E0C6600FB1B62 /* 03.png in Resources */,
+				057CC441179477CE00AD6F53 /* JADemo3ViewController.xib in Resources */,
+				057CC4431794780F00AD6F53 /* JADemo2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBA4BCD0166E0B5700FB1B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA4BCE5166E0B5700FB1B62 /* main.m in Sources */,
+				CBA4BCE9166E0B5700FB1B62 /* AppDelegate.m in Sources */,
+				CBA4BCF9166E0B5700FB1B62 /* JADemo2ViewController.m in Sources */,
+				CBA4BD17166E0C1400FB1B62 /* JADemo1ViewController.m in Sources */,
+				057CC4351794613E00AD6F53 /* JAFocusSegmentedControl.m in Sources */,
+				05DB006E181AAC8000AC8E7E /* JASegmentedControlViewController.m in Sources */,
+				057CC436179461DA00AD6F53 /* JASegmentedControl.m in Sources */,
+				057CC4371794626C00AD6F53 /* JAScrollableSegmentedControl.m in Sources */,
+				057CC43D17946A4B00AD6F53 /* JADemo3ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBA4BCE1166E0B5700FB1B62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA4BCE2166E0B5700FB1B62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBA4BD04166E0B5700FB1B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBA4BD05166E0B5700FB1B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBA4BD07166E0B5700FB1B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JASegmentedControlDemo/JASegmentedControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "JASegmentedControlDemo/JASegmentedControlDemo-Info.plist";
+				PRODUCT_NAME = JASegmentedControlDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBA4BD08166E0B5700FB1B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JASegmentedControlDemo/JASegmentedControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "JASegmentedControlDemo/JASegmentedControlDemo-Info.plist";
+				PRODUCT_NAME = JASegmentedControlDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBA4BCCE166E0B5700FB1B62 /* Build configuration list for PBXProject "JASegmentedControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA4BD04166E0B5700FB1B62 /* Debug */,
+				CBA4BD05166E0B5700FB1B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA4BD06166E0B5700FB1B62 /* Build configuration list for PBXNativeTarget "JASegmentedControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA4BD07166E0B5700FB1B62 /* Debug */,
+				CBA4BD08166E0B5700FB1B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBA4BCCB166E0B5700FB1B62 /* Project object */;
+}
