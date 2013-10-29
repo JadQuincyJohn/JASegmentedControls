@@ -8,6 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
+#define kNumberOfITems 3
 
 @interface JASegmentedControl : UIControl
 

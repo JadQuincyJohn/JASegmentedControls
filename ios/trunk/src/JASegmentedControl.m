@@ -24,7 +24,7 @@
 
 - (void)setTitles:(NSArray *)titles forState:(UIControlState)state{
     self.titles = titles;
-    for (int i=0;i<[self.buttons count];i++) {
+    for (int i=0;i< self.numberOfSegments;i++) {
         UIButton * button = (UIButton*) [self.buttons objectAtIndex:i];
         NSString * title = [self.titles objectAtIndex:i];
         [button setTitle:title forState:state];
@@ -62,7 +62,7 @@
 		_selectedSegmentIndex = selectedSegmentIndex;
         if (selectedSegmentIndex != NSNotFound) {
             [self sendActionsForControlEvents:UIControlEventValueChanged];
-            for (int i = 0; i < [self.buttons count]; i++) {
+            for (int i = 0; i < self.numberOfSegments; i++) {
                 UIButton * b = [self buttonAtIndex:i];
                 [b setSelected:(i == _selectedSegmentIndex)];
             }
@@ -97,7 +97,7 @@
     for (int i = 0; i < self.numberOfSegments; i++) {
         UIButton * button = [self buttonAtIndex:i];
         CGSize s = [self contentOffsetForSegmentAtIndex:i];
-        CGFloat width = [self widthForSegmentAtIndex:i];
+        CGFloat width = [self widthForSegment];
         [button setFrame:CGRectMake(s.width,s.height,width,self.frame.size.height)];
         [self addSubview:button];
     }
@@ -110,12 +110,11 @@
 }
 
 #pragma mark - Managing Segment Behavior and Appearance
-
 - (CGSize)contentOffsetForSegmentAtIndex:(NSUInteger)segment{
     CGSize contentOffsetForSegmentAtIndex = CGSizeZero;
     if (self.pagingEnabled) {
         for (int i = 0; i < segment; i++) {
-            contentOffsetForSegmentAtIndex.width += [self widthForSegmentAtIndex:i];
+            contentOffsetForSegmentAtIndex.width += [self widthForSegment];
         }
     }else{
         CGFloat itemWidth = floorf(self.frame.size.width / self.numberOfSegments);
@@ -124,21 +123,23 @@
     return contentOffsetForSegmentAtIndex;
 }
 
-- (CGFloat)widthForSegmentAtIndex:(NSUInteger)segment{
+#pragma mark Width for segment
+- (CGFloat)widthForSegment{
     CGFloat widthForSegmentAtIndex = 0;
     if (self.pagingEnabled) {
-        widthForSegmentAtIndex = floorf(self.initialFrame.size.width / 3);
+        widthForSegmentAtIndex = floorf(self.initialFrame.size.width / kNumberOfITems);
     }else{
         widthForSegmentAtIndex = floorf(self.frame.size.width / self.numberOfSegments);
     }
     return widthForSegmentAtIndex;
 }
 
+#pragma mark Frame adjustment
 - (CGSize)contentSize{
     CGSize contentSize = CGSizeZero;
     if (self.pagingEnabled) {
         for (int i = 0; i < self.numberOfSegments; i++) {
-            contentSize.width += [self widthForSegmentAtIndex:i];
+            contentSize.width += [self widthForSegment];
         }
         contentSize.height = self.frame.size.height;
     }else{
@@ -150,9 +151,7 @@
 - (void)adjustFrameToContentSize{
     if (self.pagingEnabled) {
         CGSize contentSize = [self contentSize];
-        CGRect rect = CGRectMake(self.frame.origin.x, self.frame.origin.y, contentSize.width, contentSize.height);
-        [self setFrame:rect];
-        NSLog(@"Frame for segmented control %@",NSStringFromCGRect(rect));
+        [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, contentSize.width, contentSize.height)];
     }
 }
 
@@ -162,7 +161,6 @@
 }
 
 #pragma mark - Managing Segment Content
-
 -(UIImage*)imageForSegmentAtIndex:(NSUInteger)index{
     return [self buttonAtIndex:index].imageView.image;
 }
@@ -182,7 +180,7 @@
 }
 
 -(void) setTitleColor:(UIColor*)textColor forState:(UIControlState)state{
-    for (int i = 0;i<[self.buttons count];i++) {
+    for (int i = 0;i< self.numberOfSegments;i++) {
         [[self buttonAtIndex:i] setTitleColor:textColor forState:state];
     }
 }
@@ -199,14 +197,14 @@
 }
 
 - (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state {
-    for (int i = 0;i<[self.buttons count];i++) {
+    for (int i = 0;i < self.numberOfSegments;i++) {
         UIImage * image = [self imageWithColor:color forWidth:self.bounds.size.width / self.numberOfSegments];
         [self setBackgroundImage:image forState:state andIndex:i];
     }
 }
 
 -(void) setTitleShadowColor:(UIColor*)shadowColor forState:(UIControlState)state{
-    for (int i = 0;i<[self.buttons count];i++) {
+    for (int i = 0; i < self.numberOfSegments;i++) {
         UIButton * b = [self buttonAtIndex:i];
         [b.titleLabel setShadowOffset:CGSizeMake(0, 1)];
         [b setTitleShadowColor:shadowColor forState:state];
@@ -214,7 +212,7 @@
 }
 
 - (void)setStretchableBackgroundImage:(UIImage *)image forState:(UIControlState)state{
-    for (int i = 0;i<[self.buttons count];i++) {
+    for (int i = 0; i < self.numberOfSegments;i++) {
         UIButton * b = [self buttonAtIndex:i];
         UIImage *stretchedBackgroundImage = [image stretchableImageWithLeftCapWidth:image.size.width/2-1 topCapHeight:image.size.height/2];
         [b setBackgroundImage:stretchedBackgroundImage forState:state];
